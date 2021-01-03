@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+char ch='A'；   //内存
+printf("%c\n",ch);   //%c=打印字符格式的数据
+int age=20;
+printf(("%d\n",age);    //%d=打印整形十进制数据
+return 0
+}
