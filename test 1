@@ -1,0 +1,7 @@
+          //包含一个叫stdio.h的文件
+#include <stdio.h>
+int main()     //主（main）函数---程序的入口，有且仅有一个
+{
+printf("hehe\n");     //print function--printf--打印函数
+return 0;  
+}
