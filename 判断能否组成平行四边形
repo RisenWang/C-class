@@ -1,0 +1,24 @@
+#include <stdio.h>
+typedef struct node {
+int x;
+int y;
+} Node;
+int main(void)
+{
+Node n[4];
+int i;
+for (i = 0; i < 4; i++) {
+printf("Enter the node %d->x\tnode %d->y:\n", i + 1, i + 1);
+scanf("%d %d", &n[i].x, &n[i].y);
+}
+if (((n[3].x - n[2].x) == (n[1].x - n[0].x)) && ((n[3].y - n[2].y) == (n[1].y - n[0].y))) {
+printf("mianji: %d\n", ((n[1].x - n[0].x) * n[2].y));
+} else if (((n[3].x - n[1].x) == (n[2].x - n[0].x)) && ((n[3].y - n[1].y) == (n[2].y - n[0].y))) {
+printf("mianji: %d\n", ((n[1].x - n[0].x) * n[2].y));
+} else if (((n[3].x - n[0].x) == (n[1].x - n[2].x)) && ((n[3].y - n[0].y) == (n[1].y - n[2].y))) {
+printf("mianji: ****\n");
+} else {
+printf("cannot\n");
+}
+return 0;
+}
